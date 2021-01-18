@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  width: 100vw;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+.p-sm, .p-bg {
+  color: hsl(229, 6%, 66%);
+  margin-bottom: 10px;
+}
+.p-bg {
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1;
+}
+.p-bgb {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.h-bg {
+  margin-bottom: 10px;
+}
+
+.landing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.landing-text {
+  text-align: center;
+  margin: 20px auto;
+  width: 50%;
+}
+
+.card {
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img {
+  margin-top: 15px;
+  width: 20%;
+  align-self: flex-end;
+}
+
+.landing-grid {
+  margin: 20px auto;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(minmax(4, 1fr));
+  gap: 20px;
+}
+
+.card-content .p-sm {
+  font-size: 13px;
+}
+.card1 {
+  border-top: solid hsl(180, 62%, 55%) 5px;
+  grid-row: 2 / span 2;
+  grid-column: 1;
+}
+
+.card2 {
+  border-top: solid hsl(0, 78%, 62%) 5px;
+  grid-row: 1/3;
+  grid-column: 2;
+}
+.card3 {
+  border-top: solid hsl(34, 97%, 64%) 5px;
+  grid-row: 3/5;
+  grid-column: 2
+}
+.card4 {
+  border-top: solid hsl(212, 86%, 64%) 5px;
+  grid-row: 2 / span 2;
+  grid-column: 3;
+}
+
+/* media */
+
+@media screen and (max-width: 1000px) {
+  .landing {
+    margin: 100px auto;
+    position: static;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+  }
+  .landing-grid {
+    margin: 40px auto;
+    width: 90%;
+    grid-template-columns: repeat(3, auto);
+
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .landing {
+  width: 90%;
+  margin: 40px auto;
+  }
+  .landing-text {
+    margin: 20px auto;
+    width: 90%;
+  }
+  .landing-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 20px auto;
+  }
+  .card1 {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+  .card2 {
+    grid-row: 2;
+    grid-column: span 2;
+  }
+  .card3 {
+    grid-row: 3;
+    grid-column: span 2;
+  }
+  .card4 {
+    grid-row: 4;
+    grid-column: span 2;
+  }
+    
+}
+@media screen and (max-width: 450px) {
+  .p-bgb, .p-bg {
+    font-size: 1.5rem;
+  }
+  .p-sm {
+    font-size: 1rem;
+  }
+  .card-content {
+    padding: 30px;
+  }
+}
