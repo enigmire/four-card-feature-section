@@ -110,7 +110,6 @@ body {
     margin: 40px auto;
     width: 90%;
     grid-template-columns: repeat(3, auto);
-
   }
 }
 
