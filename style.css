@@ -9,40 +9,44 @@
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
-  width: 100vw;
   line-height: 1.5;
   scroll-behavior: smooth;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 98%);
 }
 
-.p-sm, .p-bg {
+.p-sm {
   color: hsl(229, 6%, 66%);
   margin-bottom: 10px;
 }
-.p-bg {
+.h-bg1 {
   font-size: 2rem;
   font-weight: 100;
-  line-height: 1;
+  color: hsl(229, 6%, 66%);
+  
 }
-.p-bgb {
+.h-bg2 {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
 .h-bg {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .landing {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 100px auto;
 }
 
 .landing-text {
+  padding: 20px 0;
   text-align: center;
-  margin: 20px auto;
-  width: 50%;
+  margin: auto;
+  width: 55%;
+  max-width: 600px;
 }
 
 .card {
@@ -63,7 +67,8 @@ body {
 }
 
 .landing-grid {
-  margin: 20px auto;
+  max-width: 1000px;
+  padding: 1rem;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(3, 300px);
@@ -101,10 +106,7 @@ body {
 @media screen and (max-width: 1000px) {
   .landing {
     margin: 100px auto;
-    position: static;
-    top: 0;
-    left: 0;
-    transform: translate(0);
+
   }
   .landing-grid {
     margin: 40px auto;
@@ -114,12 +116,7 @@ body {
 }
 
 @media screen and (max-width: 750px) {
-  .landing {
-  width: 90%;
-  margin: 40px auto;
-  }
   .landing-text {
-    margin: 20px auto;
     width: 90%;
   }
   .landing-grid {
@@ -146,7 +143,7 @@ body {
     
 }
 @media screen and (max-width: 450px) {
-  .p-bgb, .p-bg {
+  .h-bg1, .h-bg2, .h-bg {
     font-size: 1.5rem;
   }
   .p-sm {
