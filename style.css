@@ -24,7 +24,7 @@ body {
 }
 .h-bg1 {
   font-size: 2rem;
-  font-weight: 100;
+  font-weight: 200;
   color: hsl(229, 6%, 66%);
   
 }
@@ -35,6 +35,7 @@ body {
 }
 .h-bg {
   margin-bottom: 5px;
+  font-weight: 400;
 }
 
 .landing {
@@ -51,11 +52,12 @@ body {
 
 .card {
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 
 }
 
 .card-content {
-  padding: 20px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
 }
